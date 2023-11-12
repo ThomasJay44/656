@@ -1,15 +1,20 @@
-import style from "./style.css";
+// Home.js
+import React from "react";
+import "./style.css";
 
 export default function Home() {
   return (
-    <>
-      <h1> this is the home Pages </h1>
-
-      <p>
-               If you are using Webpack in your project, review your Webpack
-        configuration to ensure it is set up correctly. Issues in the
-        configuration can sometimes cause module resolution problems.
-      </p>
-    </>
+    <div className="backgroundContainer">
+      <div className="content">
+        <div className="bioContainer">
+          <h1>Welcome to Your Business</h1>
+          <p>Your business bio goes here. Describe your services and what makes your business unique.</p>
+          <div className="buttons">
+            <button>Contact</button>
+            <button>View Services</button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
