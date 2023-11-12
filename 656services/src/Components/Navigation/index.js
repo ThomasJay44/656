@@ -11,6 +11,8 @@ export default function Navigation() {
   };
 
   return (
+    <>
+
     <Navbar
       collapseOnSelect
       expand="lg"
@@ -63,5 +65,12 @@ export default function Navigation() {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+
+    <div className="construction-bar">
+        Apologies, website under construction, some features unavailable
+      </div>
+    </>
+
+    
   );
 }

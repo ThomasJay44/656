@@ -13,6 +13,7 @@ export default function App() {
     <Router>
       <div className="App">
         <Navigation />
+
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
