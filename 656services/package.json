@@ -1,7 +1,7 @@
 {
   "name": "656services",
     "version": "0.1.0",
-    "homepage": "https://thomasjay44.github.io/656",
+    "homepage": "https://thomasjay44.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -22,7 +22,9 @@
     "test": "react-scripts test",
     "dev": "nodemon server.js",
     "eject": "react-scripts eject",
-    "publish": "gh-pages -d src"
+    "publish": "gh-pages -d src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
