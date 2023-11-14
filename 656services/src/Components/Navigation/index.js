@@ -47,7 +47,7 @@ export default function Navigation() {
             </NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item as={Link} to="/Property Management">
-              Property Management
+              Property Managementt
             </NavDropdown.Item>
           </NavDropdown>
 
