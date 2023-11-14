@@ -17,6 +17,7 @@ export default function App() {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/656" element={<Home />} />
             <Route path="/wj" element={<WJ />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
