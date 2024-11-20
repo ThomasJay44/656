@@ -1,0 +1,95 @@
+/* Cleaned up and refined styles for readability and layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.wjContainer {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('./assets/fierro1.JPG'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Adding overlay for better readability */
+.wjContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+    z-index: -1; /* Behind the content */
+}
+
+/* Wrapper to center content vertically and horizontally */
+.contentWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center content */
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    text-align: center;
+    color: #fff; /* White text color for contrast */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text containers */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Title styling */
+.wjTitle {
+    font-size: 3em; /* Larger title */
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Description styling */
+.wjDescription {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5; /* Improved line spacing */
+}
+
+/* Services section styling */
+.wjServices {
+    margin-bottom: 40px;
+}
+
+.wjServices h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.serviceList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.serviceList li {
+    margin: 10px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .wjTitle {
+        font-size: 2.5em;
+    }
+
+    .wjDescription {
+        font-size: 1.1em;
+    }
+
+    .serviceList li {
+        font-size: 1.1em;
+    }
+}

@@ -10,6 +10,9 @@ export default function Home() {
           <h1>Welcome to 656 Services</h1>
           <p>Your business bio goes here. Describe your services and what makes your business unique.</p>
           <div className="buttons">
+            <Link to="/Services">
+              <button>Services</button>
+            </Link>
             <Link to="/contact">
               <button>Contact</button>
             </Link>

@@ -25,9 +25,17 @@ body {
   }
   
   .bioContainer h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em; /* Increase font size */
+    margin-bottom: 20px;
+    padding: 10px 20px; /* Add padding for spacing inside the element */
+    background-color: #4caf50; /* Add a background color */
+    color: #fff; /* Text color */
+    border: 3px solid #fff; /* Add a border */
+    border-radius: 10px; /* Round the corners of the border */
+    display: inline-block; /* Ensure it doesn't stretch across the entire width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for emphasis */
   }
+  
   
   .bioContainer p {
     font-size: 1.2em;
@@ -43,12 +51,20 @@ body {
     padding: 10px 20px;
     margin: 0 10px;
     font-size: 1em;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    background-color: #4caf50; /* Match the heading's background color */
+    color: #fff; /* Text color */
+    border: 3px solid #fff; /* Add a border similar to the heading */
+    border-radius: 10px; /* Round the corners of the border */
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for emphasis */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth animation for hover */
   }
+  
+  .buttons button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Enhance the shadow on hover */
+  }
+  
   
   .construction-bar {
     background-color: #ff6347; /* Adjust the background color as needed */

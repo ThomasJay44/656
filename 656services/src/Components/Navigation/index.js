@@ -26,9 +26,7 @@ export default function Navigation() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link as={Link} to="/wj">
-            W&J Landscaping
-          </Nav.Link>
+
 
           <NavDropdown
             title="Services"
@@ -36,20 +34,24 @@ export default function Navigation() {
             onToggle={handleDropdownToggle}
             show={isDropdownOpen}
           >
-            <NavDropdown.Item as={Link} to="/Landscaping">
+            <NavDropdown.Item as={Link} to="/WJ">
               Landscaping
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/Maintenance">
+            <NavDropdown.Item as={Link} to="/PropertyMaintenance">
               Maintenance
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/Snow Removal">
+            <NavDropdown.Item as={Link} to="/WJ">
               Snow Removal
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item as={Link} to="/Property Management">
-              Property Managementt
+            <NavDropdown.Item as={Link} to="/PropertyManagement">
+              Property Management
             </NavDropdown.Item>
           </NavDropdown>
+
+          <Nav.Link as={Link} to="/wj">
+            W&J Landscaping
+          </Nav.Link>
 
           <Nav.Link as={Link} to="/Partners">
             Partners

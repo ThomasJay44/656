@@ -1,0 +1,123 @@
+/* Property Management Page Styling */
+.propertyManagementContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 40px;
+    min-height: 100vh;
+    background-image: url('./assets/backg.avif'); /* Add your background image here */
+    background-size: cover; /* Ensures the background covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Title Styling */
+.propertyManagementTitle {
+    font-size: 2.5em;
+    color: #fff; /* White text for better contrast */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+}
+
+/* Description Styling */
+.propertyManagementDescription {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fff; /* White text for better contrast */
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for added contrast */
+}
+
+/* Services Section */
+.propertyServices {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+.serviceTitle {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff; /* White text for better contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+}
+
+/* Service List */
+.serviceList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+    color: #fff; /* White text for better contrast */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background for the list */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for added contrast */
+}
+
+.serviceList li {
+    margin: 20px 0;
+}
+
+/* Service Image Styling */
+.serviceImage {
+    margin-top: 10px;
+}
+
+.serviceImage img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contactSection {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light grey/white with some transparency */
+    border-radius: 10px; /* Optional: to add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: to add a soft shadow */
+}
+
+.contactButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+    background-color: #45a049;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .propertyManagementTitle {
+        font-size: 2em;
+    }
+
+    .propertyManagementDescription {
+        font-size: 1.1em;
+    }
+
+    .serviceList li {
+        font-size: 1em;
+    }
+
+    .contactButton {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}

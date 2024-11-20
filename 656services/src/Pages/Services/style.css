@@ -1,0 +1,91 @@
+/* Services Page Container */
+.servicesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('./assets/E1033E1B.avif'); /* Add the background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Optional: Create a parallax effect */
+}
+
+/* Title Styling */
+.servicesTitle {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4caf50;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for text visibility */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Buttons Container */
+.servicesButtons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Individual Service Buttons */
+.serviceButton {
+    display: flex;
+    align-items: flex-end; /* Align text at the bottom */
+    justify-content: center;
+    padding: 15px;
+    background-size: cover; /* Ensure the image covers the button */
+    background-position: center; /* Center the image */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 200px; /* Adjust height for uniformity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for text visibility */
+}
+
+/* Lawn Maintenance Button */
+.serviceButton:nth-child(1) {
+    background-image: url('./assets/lawn.avif'); /* Replace with Lawn Maintenance image URL */
+}
+
+/* Snow Removal Button */
+.serviceButton:nth-child(2) {
+    background-image: url('./assets/snow.avif'); /* Replace with Snow Removal image URL */
+}
+
+/* Property Maintenance Button */
+.serviceButton:nth-child(3) {
+    background-image: url('./assets/powerwash.avif'); /* Replace with Property Maintenance image URL */
+}
+
+/* Property Management Button */
+.serviceButton:nth-child(4) {
+    background-image: url('./assets/prop.avif'); /* Replace with Property Management image URL */
+}
+
+/* Hover Effect for Buttons */
+.serviceButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .servicesTitle {
+        font-size: 2em;
+    }
+
+    .serviceButton {
+        font-size: 1em;
+        height: 120px; /* Adjust height for smaller screens */
+    }
+}
